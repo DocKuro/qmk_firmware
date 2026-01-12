@@ -7,9 +7,6 @@
     "matrix": [1, 3]
   },
   "diode_direction": "COL2ROW",
-  "dynamic_keymap": {
-    "layer_count": 4
-  },
   "eeprom": {
     "driver": "wear_leveling",
     "wear_leveling": {

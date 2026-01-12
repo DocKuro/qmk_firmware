@@ -33,34 +33,34 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case RGB_R:
             if (record->event.pressed) {
                 rgb_matrix_sethsv(0, 255, 255);
-                rgb_matrix_mode(1);
+                rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
             }
             return false; /* Skip all further processing of this key */
 
         case RGB_G:
             if (record->event.pressed) {
                 rgb_matrix_sethsv(85, 255, 255);
-                rgb_matrix_mode(1);
+                rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
             }
             return false; /* Skip all further processing of this key */
 
         case RGB_B:
             if (record->event.pressed) {
                 rgb_matrix_sethsv(170, 255, 255);
-                rgb_matrix_mode(1);
+                rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
             }
             return false; /* Skip all further processing of this key */
 
         case RGB_W:
             if (record->event.pressed) {
                 rgb_matrix_sethsv(0, 0, 255);
-                rgb_matrix_mode(1);
+                rgb_matrix_mode(RGB_MATRIX_SOLID_COLOR);
             }
             return false; /* Skip all further processing of this key */
 
         case SW_cy:
             rgb_matrix_sethsv(0, 255, 255);
-            rgb_matrix_mode(13);
+            rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
             return false; /* Skip all further processing of this key */
 
 
